@@ -35,7 +35,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://physiomobile.dmpt.my.id/",
+					"raw": "http://physiomobile.dmpt.my.id/api/patients/1",
 					"protocol": "http",
 					"host": [
 						"physiomobile",
@@ -44,7 +44,9 @@
 						"id"
 					],
 					"path": [
-						""
+						"api",
+						"patients",
+						"1"
 					]
 				}
 			},
@@ -82,11 +84,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://interview.test/api/patients/1",
+					"raw": "http://physiomobile.dmpt.my.id/api/patients/1",
 					"protocol": "http",
 					"host": [
-						"interview",
-						"test"
+						"physiomobile",
+						"dmpt",
+						"my",
+						"id"
 					],
 					"path": [
 						"api",
