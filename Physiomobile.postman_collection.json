@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "5b74f7c2-0f03-4fee-ad5c-b35c69421ba9",
+		"name": "Physiomobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13429693"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "key1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Faisal\",\n  \"id_type\": \"Passport\",\n  \"id_no\": \"2345678901234567\",\n  \"gender\": \"male\",\n  \"dob\": \"2025-05-12\",\n  \"address\": \"Kuala Lumpur\",\n  \"medium_acquisition\": \"Emergency1\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://physiomobile.dmpt.my.id/",
+					"protocol": "http",
+					"host": [
+						"physiomobile",
+						"dmpt",
+						"my",
+						"id"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "key1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Faisal\",\n  \"id_type\": \"Passport\",\n  \"id_no\": \"2345678901234567\",\n  \"gender\": \"male\",\n  \"dob\": \"2025-05-12\",\n  \"address\": \"Kuala Lumpur\",\n  \"medium_acquisition\": \"Emergency1\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://interview.test/api/patients/1",
+					"protocol": "http",
+					"host": [
+						"interview",
+						"test"
+					],
+					"path": [
+						"api",
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "key1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://physiomobile.dmpt.my.id/api/patients?search=Emergency2",
+					"protocol": "http",
+					"host": [
+						"physiomobile",
+						"dmpt",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"patients"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "Emergency2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "key1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://interview.test/api/patients/1",
+					"protocol": "http",
+					"host": [
+						"interview",
+						"test"
+					],
+					"path": [
+						"api",
+						"patients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-API-Key",
+						"value": "key1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": " Faisal",
+							"type": "text"
+						},
+						{
+							"key": "id_type",
+							"value": " Passport",
+							"type": "text"
+						},
+						{
+							"key": "id_no",
+							"value": " 2345678901234567",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": " male",
+							"type": "text"
+						},
+						{
+							"key": "dob",
+							"value": " 2025-05-12",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": " Kuala Lumpur",
+							"type": "text"
+						},
+						{
+							"key": "medium_acquisition",
+							"value": " Emergency1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://physiomobile.dmpt.my.id/api/patients",
+					"protocol": "https",
+					"host": [
+						"physiomobile",
+						"dmpt",
+						"my",
+						"id"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
